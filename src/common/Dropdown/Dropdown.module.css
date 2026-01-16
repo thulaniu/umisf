@@ -1,0 +1,216 @@
+.selectContainer {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.lableselected {
+  background-image: linear-gradient(to bottom, rgb(5, 9, 34), rgb(22, 35, 74));
+  left: 30px;
+  top: -12px;
+  padding-bottom: 0;
+  position: absolute;
+  font-size: 15px;
+  font-family: "Hind";
+  cursor: pointer;
+  font-weight: lighter;
+}
+
+.lable {
+  background-color: rgb(22, 35, 74);
+  position: absolute;
+  top: 0.5vw;
+  left: 30px;
+  font-family: "Hind";
+  cursor: pointer;
+  font-weight: lighter;
+  z-index: 10;
+}
+
+.selectedValue {
+  background-color: rgb(22, 35, 74);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.5vw;
+  padding: 1vw;
+  min-height: 3.5vw;
+  font-family: "Hind";
+  cursor: pointer;
+}
+
+.optionsContainer {
+  position: absolute;
+  width: 93%;
+  margin-top: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #111c4e;
+  border: 1px solid #ccc;
+  z-index: 100;
+}
+
+.option {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 1.5vw;
+  font-family: "Hind";
+  transition: ease-in-out 1s;
+}
+
+.option:hover {
+  background-color: rgb(16, 23, 60);
+}
+
+.down {
+  cursor: pointer;
+  float: right;
+  width: 1vw;
+  z-index: 20;
+}
+
+@media (max-width: 992px) {
+  .lable {
+    top: 18%;
+    left: 3.5%;
+  }
+
+  .lableselected {
+    top: -20%;
+    left: 3.5%;
+  }
+
+  .optionsContainer {
+    width: 97%;
+  }
+}
+
+@media (max-width: 920px) {
+
+  .optionsContainer {
+    width: 95%;
+  }
+  .selectedValue {
+    min-height: 4vw;
+    font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .selectedValue {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 440px) {
+
+  .optionsContainer {
+    width: 95%;
+  }
+}
+
+@media (max-width: 420px) {
+  .lable {
+    left: 5.5%;
+  }
+
+  .lableselected {
+    left: 5%;
+  }
+
+  .optionsContainer {
+    width: 95%;
+  }
+
+  .selectedValue {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 920px) {
+  .optionsContainer {
+    width: 97%;
+  }
+}
+
+@media (max-width: 820px) {
+  .selectedValue {
+    padding: 1vw;
+  }
+
+  .optionsContainer {
+    width: 95%;
+  }
+  .lableselected {
+    left: 18px;
+    top: -9px;
+    font-size: 1.5vw;
+  }
+
+  .down {
+    margin-top: 0.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .selectedValue{
+    margin-top: 10px;
+  }
+  .optionsContainer {
+    width: 97%;
+  }
+
+  .lable{
+    font-size: 1.6vw;
+    top: 15px;
+    left: 15px;
+  }
+
+  .lableselected{
+    top: 1px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 620px) {
+  .lableselected{
+    font-size: 1.6vw;
+    top: 3px;
+  }
+  .lable{
+    font-size: 1.7vw;
+  }
+}
+
+@media (max-width: 520px) {
+  .lable{
+    font-size: 2vw;
+  }
+  .lableselected{
+    font-size: 2vw;
+  }
+
+  .selectedValue{
+    padding: 2.5vw;
+  }
+  .down {
+    margin-top:-1vw;
+    width: 2vw;
+  }
+
+  .option{
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .lable{
+    font-size: 3vw;
+  }
+
+  .selectedValue{
+    padding: 3vw;
+  }
+
+  .lableselected{
+    font-size: 2.5vw;
+  }
+}
+

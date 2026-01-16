@@ -1,0 +1,256 @@
+.developer-container {
+  background-color: rgb(10, 9, 10);
+  height: 70vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../assests/images/developer-front.jpg");
+}
+
+.developer-title {
+  color: #0984e3;
+  padding: 20vw;
+  padding-bottom: 0;
+  padding-left: 8vw;
+  font-family: "Hind";
+  font-size: 3vw;
+}
+
+.developers-all {
+  /* padding: 100px; */
+  padding-top: 3vw;
+  background: url("../../assests/images/developer-back.jpg");
+  background-size: contain;
+  text-align: center;
+}
+
+.developers-all p {
+  font-size: 1vw;
+  text-align: center;
+  padding: 1vw 9.2vw;
+  font-family: "Hind";
+  padding-bottom: 0;
+}
+
+.developers {
+  width: 100%;
+  margin-top: 3vw;
+}
+
+.developer {
+  display: inline-block;
+  margin: 10px 1vw;
+  position: relative;
+}
+
+.developer img {
+  width: 18vw;
+  overflow: hidden;
+  box-shadow: 1px 5px 15px rgb(0 0 0 / 0.2);
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  width: 18vw;
+  height: 25.8vw;
+  text-align: center;
+  opacity: 0;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay img {
+  margin-top: 20vw;
+  width: 2.5vw;
+}
+
+.github img {
+  width: 3.5vw;
+}
+
+.details {
+  margin-top: 20px;
+}
+
+.details p {
+  font-size: 1vw;
+  font-family: "Hind";
+  height: 10px;
+  padding: 0;
+  /* line-height: 30px; */
+}
+@media (max-width: 920px) {
+  .developer-title {
+    font-size: 4vw;
+    padding-top: 24vw;
+  }
+
+  .developers-all p {
+    font-size: 1.2vw;
+  }
+  .developer img {
+    width: 19vw;
+  }
+
+  .overlay {
+    width: 19vw;
+    height: 27.3vw;
+  }
+  .overlay img {
+    margin-top: 22vw;
+    width: 2.5vw;
+  }
+
+  .github img {
+    width: 3.5vw;
+  }
+  .details p {
+    font-size: 1.2vw;
+    width: 18vw;
+    text-align: center;
+    height: 20px;
+    line-height: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .developer-title {
+    font-size: 4vw;
+    padding-top: 30vw;
+  }
+
+  .developers-all p {
+    font-size: 1.3vw;
+  }
+  .developer img {
+    width: 25vw;
+  }
+
+  .overlay {
+    width: 25vw;
+    height: 36vw;
+  }
+  .overlay img {
+    margin-top: 30vw;
+    width: 4vw;
+  }
+
+  .github img {
+    width: 5vw;
+  }
+  .details {
+    margin-top: 10px;
+  }
+  .details p {
+    font-size: 1.4vw;
+    width: 20vw;
+    text-align: center;
+    height: 16px;
+    line-height: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 620px) {
+  .developer-title {
+    font-size: 5vw;
+    padding-top: 35vw;
+  }
+
+  .developers-all p {
+    font-size: 1.6vw;
+  }
+  .details p {
+    font-size: 1.5vw;
+    width: 21vw;
+  }
+}
+
+@media (max-width: 520px) {
+  .developer-title {
+    font-size: 6vw;
+    padding-top: 38vw;
+  }
+
+  .developers-all p {
+    font-size: 1.7vw;
+  }
+  
+  .details p {
+    font-size: 1.7vw;
+    width: 24vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .developer-title {
+    font-size: 7vw;
+    padding-top: 50vw;
+  }
+
+  .developers-all p {
+    font-size: 2.2vw;
+  }
+  
+  .details p {
+    font-size: 2.1vw;
+    width: 30vw;
+  }
+  .developer img {
+    width: 35vw;
+  }
+
+  .overlay {
+    width: 35vw;
+    height: 50.2vw;
+  }
+  .overlay img {
+    margin-top: 40vw;
+    width: 5vw;
+  }
+
+  .github img {
+    width: 7vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .developer-title {
+    font-size: 8vw;
+    padding-top: 55vw;
+  }
+
+  .developers-all p {
+    font-size: 3vw;
+  }
+  
+  .details p {
+    font-size: 3vw;
+    width: 46vw;
+  }
+  .developer img {
+    width: 50vw;
+  }
+
+  .overlay {
+    width: 50vw;
+    height: 72vw;
+  }
+  .overlay img {
+    margin-top: 60vw;
+    width: 5vw;
+  }
+
+  .github img {
+    width: 7vw;
+  }
+}

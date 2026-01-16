@@ -1,0 +1,100 @@
+.tournament-container {
+  background: #f7f7fe;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-title {
+  background: white;
+  margin: 10px 10vw;
+  padding: 8px 13px;
+  font-family: "Hind";
+  color: #0c0744;
+  font-size: 18px;
+}
+
+.main-title a {
+  font-family: "Hind";
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #0c0744;
+}
+
+.form-container {
+  margin: 30px 10vw;
+  margin-bottom: 0;
+  padding: 20pt;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form-container img {
+  width: 160px;
+}
+
+.form-field-container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin-top: 15pt;
+}
+
+.form-field-name {
+  flex-basis: 30%;
+  font-family: "Hind";
+  font-size: 16px;
+  color: black;
+}
+
+.form-field-value {
+  flex-basis: 70%;
+  font-family: "Hind";
+  font-weight: 100;
+  font-size: 16px;
+  color: black;
+}
+
+.form-input {
+  border: 0.5px solid #d7d8ed;
+  padding: 10px;
+  width: 100%;
+  background-color: #f7f7fe;
+}
+
+.form-field-value-tshirt {
+  flex-basis: 70%;
+  font-family: "Hind";
+  font-weight: 100;
+  font-size: 16px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.form-submit-button {
+  background: #0c0744;
+  border: none;
+  color: white;
+  font-family: "Hind";
+  font-size: 20px;
+  padding: 6px;
+  width: 160px;
+}
+
+.t-shirt {
+  background-color: #f7f7fe;
+  padding: 50px;
+}
+
+.t-shirt-label {
+  font-size: 18px;
+  font-family: "Hind";
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}

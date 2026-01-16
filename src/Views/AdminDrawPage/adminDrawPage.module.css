@@ -1,0 +1,128 @@
+@keyframes wave {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.draw-container {
+  background: #f7f7fe;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+.main-title {
+  background: white;
+  margin: 10px 10vw;
+  padding: 8px 13px;
+}
+
+.main-title a {
+  font-family: "Hind";
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #0c0744;
+}
+.folder {
+  padding: 16px;
+  align-items: center;
+  display: block;
+  border-bottom: 1px solid #d7d8ed;
+  width: 100%;
+  transition: ease-in-out 0.7s;
+  display: flex;
+}
+.draws-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  align-self: center;
+  justify-content: space-between;
+}
+.draw-each {
+  background-color: #f7f7fe;
+  margin-bottom: 10px;
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  /* padding: 20px; */
+  font-size: 30px;
+  text-align: center;
+  display: inline;
+  justify-content: space-between;
+}
+.draw-each:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.draw-btn {
+  border: none;
+  background: transparent;
+  font-size: medium;
+  margin-left: 20px;
+}
+
+.draw-btn img {
+  width: 20px;
+}
+.draw-btn img:hover {
+  width: 20px;
+  animation: wave 0.5s linear infinite;
+}
+
+.folder a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Hind";
+  color: black;
+  flex: 1;
+}
+
+.folder:hover {
+  background: #f7f7fe;
+  transform: scale(1.01);
+}
+
+.folder:hover .folder-delete {
+  display: block;
+}
+
+.folder img {
+  width: 30px;
+  margin-right: 2vw;
+}
+
+.draws-container {
+  background: white;
+  color: black;
+  margin: 60px 10vw;
+  padding: 2vw;
+  margin-bottom: 0;
+}
+
+.view-button {
+  border: none;
+  background: transparent;
+  /* display: none; */
+  height: 25px;
+  transition: ease-in-out 10s;
+}
+
+.view-button img {
+  width: 25px;
+  position: relative;
+  top: -0.5vw;
+}

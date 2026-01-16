@@ -1,0 +1,178 @@
+.gallery-container {
+  background: #f7f7fe;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-title {
+  background: white;
+  color: #0c0744;
+  margin: 10px 10vw;
+  padding: 8px 13px;
+  font-family: "Hind";
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+.main-title a {
+  font-family: "Hind";
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #0c0744;
+}
+
+.main-title img {
+  width: 16px;
+}
+
+.tool-bar {
+  background: white;
+  color: #0c0744;
+  margin: 20px 10vw;
+  padding: 8px 13px;
+  font-family: "Hind";
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.add-players {
+  background: white;
+  color: #0c0744;
+  padding: 8px 13px;
+  font-family: "Hind";
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.add-players a {
+  text-align: left;
+  text-decoration: none;
+  margin-right: 63px;
+  font-family: "Hind";
+  font-size: 16px;
+  color: black;
+}
+
+.add-players img {
+  width: 20px;
+  margin-right: 1vw;
+}
+
+.tool-bar a {
+  text-align: left;
+  text-decoration: none;
+  margin-right: 63px;
+  font-family: "Hind";
+  font-size: 16px;
+  color: black;
+}
+
+.tool-bar button {
+  text-align: left;
+  border: none;
+  background: transparent;
+}
+.tool-bar img {
+  width: 20px;
+  margin-right: 1vw;
+}
+
+.image-container {
+  margin-top: 3vw;
+  color: black;
+  margin: 60px 10vw;
+  padding: 2vw;
+}
+
+.users-container {
+  background: white;
+  margin: 60px 10vw;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.user {
+  padding: 0 10px;
+}
+
+.user-type-container:hover {
+  background: #f7f7fe;
+  transform: scale(1.01);
+}
+
+.user-type-arrow {
+  transition: ease-in-out 0.7;
+}
+
+.user-type-container {
+  padding: 20px;
+  padding-left: 5px;
+  transition: ease-in-out 0.7s;
+  background: transparent;
+  border: none;
+  font-family: "Hind";
+  font-size: 16px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #d7d8ed;
+}
+
+.users-name-container {
+  background: #f7f7fe;
+  padding: 10px;
+  padding-left: 110px;
+  display: none;
+}
+
+.users-name {
+  font-size: 15px;
+  border-bottom: 1px solid #d7d8ed;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.users-name img {
+  width: 15px;
+  margin-left: 20px;
+}
+
+.users-name-container li {
+  list-style: none;
+}
+
+.user-type-img {
+  width: 35px;
+  margin: 0 20px 0 30px;
+}
+
+@media only screen and (max-width: 465px) {
+  .user-type-container {
+    font-size: 14px;
+    padding-right: 5px;
+  }
+
+  .users-container {
+    padding: 10px;
+  }
+
+  .user-type-img {
+    width: 30px;
+    margin: 0 5px 0 15px;
+  }
+
+  .users-name-container {
+    padding-left: 60px;
+    display: none;
+  }
+
+  .users-name {
+    font-size: 13px;
+  }
+}

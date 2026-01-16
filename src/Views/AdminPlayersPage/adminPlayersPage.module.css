@@ -1,0 +1,174 @@
+.players-full-container {
+    background: #f7f7fe;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .main-title {
+    background: white;
+    margin: 10px 10vw;
+    padding: 8px 13px;
+  }
+  
+  .main-title a {
+    font-family: "Hind";
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #0c0744;
+  }
+  .tool-bar {
+    background: white;
+    color: #0c0744;
+    margin: 20px 10vw;
+    padding: 8px 13px;
+    font-family: "Hind";
+    font-weight: lighter;
+    font-size: 16px;
+  }
+  
+  .tool-bar a{
+    text-decoration: none;
+    font-family: "Hind";
+    font-size: 18px;
+    color: black;
+  }
+  
+  .tool-bar button {
+    text-align: left;
+    border: none;
+    background: transparent;
+  }
+  
+  .tool-bar img {
+    width: 20px;
+    margin-right: 1vw;
+  }
+  
+  .players-container {
+    background: white;
+    color: black;
+    margin: 60px 10vw;
+    padding: 2vw;
+    margin-bottom: 0;
+  }
+  .folder {
+    padding: 16px;
+    align-items: center;
+    display: block;
+    border-bottom: 1px solid #d7d8ed;
+    width: 100%;
+    transition: ease-in-out 0.7s;
+    display: flex;
+  }
+  .folder a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Hind";
+    color: black;
+    flex: 1;
+  }
+  
+  .folder:hover {
+    background: #f7f7fe;
+    transform: scale(1.01);
+  }
+  
+  .folder:hover .folder-delete {
+    display: block;
+  }
+  
+  .folder img {
+    width: 30px;
+    margin-right: 2vw;
+  }
+  .players-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-self: center;
+    justify-content: space-between;
+  }
+  .player-each {
+    background-color: #f7f7fe;
+    margin-bottom: 10px;
+  
+    font-size: 30px;
+    text-align: center;
+    display: inline;
+    justify-content: space-between;
+  }
+  .player-each a {
+    font-size: medium;
+    text-decoration: none;
+    color: black;
+  }
+  .player-each a:hover {
+    font-size: medium;
+    text-decoration: none;
+    color: black;
+  }
+  .player-each:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .player-btn {
+    border: none;
+    background: transparent;
+    font-size: medium;
+    margin-left: 20px;
+  }
+  .profile-field-container {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 15pt;
+  }
+  
+  .profile-field-name {
+    flex-basis: 30%;
+    font-family: "Hind";
+    font-size: 16px;
+    color: black;
+  }
+  
+  .profile-field-value {
+    flex-basis: 70%;
+    font-family: "Hind";
+    font-weight: 100;
+    font-size: 16px;
+    color: black;
+  }
+  
+  .player-btn img {
+    width: 20px;
+  }
+  .form-input{
+    margin-left: 0;
+  }
+  @keyframes wave {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    50% {
+      transform: rotate(0);
+    }
+    75% {
+      transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+  .player-btn img:hover {
+    width: 20px;
+    animation: wave 0.5s linear infinite;
+  }
+  

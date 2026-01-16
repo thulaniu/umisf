@@ -1,0 +1,286 @@
+.body {
+  background: #040924;
+  width: 100%;
+  height: 115vh;
+  font-family: "Hind", sans-serif;
+  overflow: auto;
+}
+
+.title {
+  color: #185de1;
+  font-family: "Hind", sans-serif;
+  font-size: 4vw;
+  text-align: center;
+  padding-top: 5vw;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  width: 87%;
+  height: fit-content;
+  margin-left: 7vw;
+  background: rgba(58, 103, 82, 0.59);
+  border-radius: 5px;
+  color: #50ab08;
+  padding: 3px;
+}
+.info {
+  font-size: 1vw;
+  font-family: "Hind", sans-serif;
+}
+
+.info button {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1vw;
+  font-family: "Hind", sans-serif;
+}
+
+.info-logo {
+  height: 1vw;
+  margin-top: 0.1%;
+}
+
+.register-form {
+  background-image: url("../../../assests/images/register-bg.png");
+  background-position: center;
+  height: 30vw;
+  background-repeat: no-repeat;
+  margin-left: 22vw;
+  margin-right: 22vw;
+}
+
+.uploader {
+  width: 5vw;
+  border-radius: 50%;
+}
+
+.register-form-content {
+  position: absolute;
+  width: 70%;
+  margin-top: 5vw;
+}
+
+.picker-bg {
+  position: absolute;
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: #ffffffac;
+  right: 1.8vw;
+  top: 0.9vw;
+}
+
+.input-text {
+  font-family: "Hind", sans-serif;
+}
+
+.user-id {
+  position: absolute;
+  width: 124px;
+  height: 25px;
+  left: 815px;
+  top: 472px;
+
+  background: rgba(240, 31, 2, 0.74);
+  border-radius: 10px;
+}
+.image-trophy {
+  height: 85%;
+  width: 55%;
+  bottom: 15%;
+  left: 22.5%;
+  background: url("../../../assests/images/output-onlinegiftools (2) 1.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.label {
+  color: white;
+  font-family: "Hind";
+}
+
+.inputs {
+  font-family: "Hind";
+  font-size: 1vw;
+  padding: 5px;
+  min-height: 60px;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tournament-guidlines{
+  text-align: right;
+  width: 87%;
+  height: fit-content;
+  margin-left: 7vw;
+  margin-bottom: 1vw;
+  color: white;
+}
+
+.tournament-guidlines a{
+  font-size: 1vw;
+  text-decoration: none;
+  color: white;
+  font-family: "Hind";
+  font-weight: "bold";
+}
+
+.tournament-guidlines a:hover{
+  color: rgb(227, 67, 67);
+}
+
+.tournament-guidlines img{
+  width: 1.7vw;
+}
+
+
+.btn {
+  margin-right: 7px;
+  float: right;
+  width: 200px;
+  height: 50px;
+  font-family: "Hind";
+  font-size: 1.5vw;
+  border-radius: 7px;
+  background: transparent;
+  color: white;
+  border: 0.5px solid rgb(218, 214, 214);
+  transition: ease-in-out 1s;
+}
+.btn:hover {
+  background: rgb(46, 92, 217);
+}
+
+.btn:hover {
+  background: transparent;
+}
+
+.mdbinput {
+  font-family: "Hind";
+  font-size: 1vw;
+  padding: 1vw;
+  min-height: 3vw;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s;
+  -webkit-text-fill-color: white !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.8);
+}
+
+@media (max-width: 1037px) {
+  .tournament-guidlines a{
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 920px) {
+  .body {
+    height: 125vh;
+  }
+  .title {
+    font-size: 5vw;
+  }
+
+  .info {
+    font-size: 1.2vw;
+  }
+
+  .btn {
+    font-size: 2vw;
+  }
+
+  .tournament-guidlines a{
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 720px) {
+  .body {
+    height: 130vh;
+  }
+  .title {
+    font-size: 6vw;
+  }
+
+  .info {
+    font-size: 1.5vw;
+  }
+
+  .btn {
+    font-size: 2vw;
+    width: 150px;
+  }
+
+  .info-logo {
+    height: 1.5vw;
+  }
+  .tournament-guidlines a{
+    font-size: 1.5vw;
+  }
+
+  .tournament-guidlines img{
+    width: 2.2vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .title {
+    font-size: 7vw;
+  }
+
+  .info {
+    font-size: 2vw;
+  }
+
+  .btn {
+    font-size: 3vw;
+    width: 150px;
+  }
+  .info-logo {
+    height: 2vw;
+  }
+
+  .tournament-guidlines a{
+    font-size: 1.7vw;
+  }
+  .tournament-guidlines img{
+    width: 2.4vw;
+  }
+}
+
+@media (max-width: 520px) {
+  .btn {
+    width: 100px;
+    height: 40px;
+  }
+
+  .tournament-guidlines a{
+    font-size: 2vw;
+  }
+  .tournament-guidlines img{
+    width: 2.5vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .tournament-guidlines a{
+    font-size: 2.5vw;
+  }
+  .tournament-guidlines img{
+    width: 3.5vw;
+  }
+}

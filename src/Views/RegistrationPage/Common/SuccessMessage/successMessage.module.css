@@ -1,0 +1,127 @@
+.success-msg-box {
+  background: #040924;
+  width: 100%;
+  height: 100vh;
+  font-family: "Hind", sans-serif;
+  overflow: auto;
+}
+
+.success-msg {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-position: top;
+  font-family: "Hind";
+  width: 30vw;
+  margin-left: auto;
+  padding: 3vw 2vw;
+  margin-right: auto;
+  background-color: #2237476c;
+  font-size: 1vw;
+  font-weight: bold;
+  color: rgb(255, 251, 251);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.success-msg:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: url('../../../../assests/images/trophy.gif');
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: 80% 80%;
+}
+
+.success-msg button {
+  border: none;
+  background: #0984e3;
+  padding: 0.3vw;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.copy-text-container {
+  border: 1px solid rgb(170, 166, 166);
+  background-color: rgba(0, 0, 0, 0.268);
+  margin: 5vw 0;
+  margin-bottom: 3vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.copy-text {
+  flex-basis: 90%;
+  font-size: 1vw;
+  font-family: "Hind";
+  padding: 1vw;
+  position: relative;
+  
+}
+
+.copy-button {
+  flex-basis: 10%;
+  border-left: 1px solid rgb(170, 166, 166);
+  padding: 0.5vw;
+  position: relative;
+}
+
+.copy-button button{
+  background: transparent;
+  border: none;
+  position: relative;
+}
+
+.conquest-button{
+  position: relative;
+}
+
+@media (max-width:720px){
+  .success-msg {
+    width: 50vw;
+    font-size: 2vw;
+  }
+
+  .copy-text {
+    font-size: 2vw;
+  }
+
+  .copy-button i{
+    font-size: 2vw;
+    padding: 0.8vw;
+  }
+
+  .conquest-button{
+    padding: 3vw;
+  }
+}
+
+@media (max-width:420px){
+  .success-msg {
+    font-size: 3vw;
+    padding: 5vw;
+  }
+
+  .copy-text {
+    font-size: 2vw;
+  }
+
+  .copy-button i{
+    font-size: 3vw;
+    padding: 0.8vw;
+  }
+
+  .conquest-button{
+    padding: 3vw;
+  }
+}

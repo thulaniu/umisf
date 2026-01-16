@@ -1,0 +1,174 @@
+.why-container {
+  background-color: #f1f4f6;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.why-container a {
+  text-decoration: none;
+  padding: 8px 20px;
+  width: fit-content;
+  text-align: center;
+  background: transparent;
+  color: #0984e3;
+  border: 1px solid #0984e3;
+  cursor: pointer;
+  font-size: 1vw;
+  position: relative;
+  overflow: hidden;
+  font-family: "Hind", sans-serif;
+  transition: 0.8s;
+  z-index: 0;
+}
+
+.why-container a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  width: 100%;
+  height: 0%;
+  background: #0984e3;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.why-container a:hover::before {
+  height: 180%;
+}
+
+.why-container a:hover {
+  color: #fff;
+}
+
+.why-title,
+.why-title p {
+  font-family: "Hind", sans-serif;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.why-desc {
+  padding: 0 11vw;
+  text-align: center;
+}
+
+.why-desc p,
+.why-desc b {
+  font-family: "Hind", sans-serif;
+  font-size: 1vw;
+}
+
+.why-list {
+  text-align: left;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why-list p {
+  font-weight: bold;
+  line-height: 1vw;
+}
+
+.why-view-more {
+  margin-top: 3vw;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1190px) {
+  .team-description {
+    padding: 4vw;
+    padding-top: 0;
+  }
+
+  .team-title {
+    padding: 4vw;
+    padding-bottom: 0;
+  }
+
+  .team-photo img {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .why-list {
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+  }
+  .why-desc p,
+  .why-desc b {
+    font-size: 1.4vw;
+  }
+
+  .why-title,
+  .why-title p {
+    font-size: 4vw;
+  }
+
+  .why-view-more a {
+    font-size: 1.4vw;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .team-container {
+    background-image: url("../../../assests/images/team.jpeg");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .team-photo {
+    display: none;
+  }
+
+  .team {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .why-list {
+    font-size: 2vw;
+    line-height: 2vw;
+  }
+  .why-desc p,
+  .why-desc b {
+    font-size: 2vw;
+  }
+
+  .why-title,
+  .why-title p {
+    font-size: 5vw;
+  }
+
+  .why-view-more a {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .why-list {
+    font-size: 3vw;
+    line-height: 3vw;
+  }
+  .why-desc p,
+  .why-desc b {
+    font-size: 3vw;
+  }
+
+  .why-title,
+  .why-title p {
+    font-size: 6vw;
+  }
+
+  .why-view-more a {
+    font-size: 3vw;
+  }
+}

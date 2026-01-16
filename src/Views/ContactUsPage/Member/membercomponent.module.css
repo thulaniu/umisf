@@ -1,0 +1,125 @@
+.member {
+  width: 15vw;
+  text-align: center;
+  color: black;
+}
+
+.member-img img {
+  width: 130px;
+  border-radius: 50%;
+}
+
+.member-info {
+  margin-top: 0.8vw;
+  transition: ease-in-out 0.7s;
+}
+
+.member-info p {
+  line-height: 2vw;
+  font-size: 1vw;
+  font-weight: bold;
+  font-family: "Hind";
+}
+
+.member-info div {
+  font-size: 1vw;
+  font-family: "Hind";
+}
+
+.social i {
+  padding: 0.7vw;
+  font-size: 1vw;
+}
+
+@media (max-width: 920px) {
+  .member-info p {
+    font-size: 1.2vw;
+  }
+  .member-info div {
+    font-size: 1.2vw;
+  }
+
+  .social i {
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 720px) {
+  .member-info p {
+    font-size: 1.5vw;
+  }
+  .member-info div {
+    font-size: 1.5vw;
+  }
+
+  .social i {
+    font-size: 1.5vw;
+  }
+
+  .member-img img {
+    width: 100px;
+  }
+
+  .member {
+    width: 18vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .member-info p {
+    font-size: 1.7vw;
+  }
+  .member-info div {
+    font-size: 1.7vw;
+  }
+
+  .social i {
+    font-size: 1.7vw;
+  }
+}
+
+@media (max-width: 520px) {
+  .member-info p {
+    font-size: 1.8vw;
+  }
+  .member-info div {
+    font-size: 1.8vw;
+  }
+
+  .social i {
+    font-size: 1.8vw;
+  }
+
+  .member {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .member-info p {
+    font-size: 3vw;
+  }
+  .member {
+    width: 34vw;
+  }
+  .member-info div {
+    font-size: 2vw;
+  }
+
+  .social i {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .member-info p {
+    font-size: 3vw;
+  }
+  .member-info div {
+    font-size: 3vw;
+  }
+
+  .social i {
+    font-size: 3vw;
+  }
+}

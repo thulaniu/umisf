@@ -1,0 +1,101 @@
+.tournament-container {
+    background: #f7f7fe;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .main-title {
+    background: white;
+    margin: 10px 10vw;
+    padding: 8px 13px;
+    font-family: "Hind";
+    font-size: 18px;
+    font-weight: bold;
+    color: #0c0744;
+  }
+  
+  .main-title img {
+    width: 18px;
+  }
+  
+  .main-title a {
+    font-family: "Hind";
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #0c0744;
+  }
+  
+  .tool-bar {
+    background: white;
+    color: #0c0744;
+    margin: 20px 10vw;
+    padding: 8px 13px;
+    font-family: "Hind";
+    font-weight: lighter;
+    font-size: 16px;
+  }
+  
+  .tool-bar a {
+    text-align: left;
+    text-decoration: none;
+    margin-right: 63px;
+    font-family: "Hind";
+    font-size: 16px;
+    color: black;
+  }
+  .tool-bar img {
+    width: 20px;
+    margin-right: 1vw;
+  }
+  
+  .folder-container {
+    background: white;
+    color: black;
+    margin: 60px 10vw;
+    padding: 2.3vw;
+    margin-bottom: 0;
+  }
+  
+  .table-headers{
+      border-bottom: 2px solid #cbcecf;
+  }
+  
+  .table-header {
+    font-size: 16px;
+    font-family: "Hind";
+    color: #585a5b;
+    text-align: center;
+  }
+  
+  .table-row {
+    font-size: 16px;
+    font-family: "Hind";
+    display: inline-block;
+    width: 15%;
+    color: black;
+    padding-bottom: 13px;
+    text-align: center;
+  }
+  
+  .table-header {
+    display: inline-block;
+    width: 15%;
+  }
+  
+  .table-body{
+      border-bottom: 1px solid #cbcecf;
+      padding:8px;
+      transition: ease-in-out 0.7s;
+  }
+  
+  .table-body:hover{
+      transform: scale(1.01);
+      background: #f7f7fe;
+  }
+  
+  .action:hover{
+    cursor: pointer;
+  }

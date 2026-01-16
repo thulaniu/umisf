@@ -1,0 +1,89 @@
+.uploadCard {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+
+  /* Match payment card width */
+  width: 550px;
+  max-width: 100%;
+  height: 100%;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🔹 Ant Design dragger fix */
+.uploadCard :global(.ant-upload),
+.uploadCard :global(.ant-upload-drag) {
+  width: 100%;
+}
+
+/* 🔹 Dotted box */
+.uploadCard :global(.ant-upload-drag) {
+  background: #f8fbff;
+  border: 2px dashed #3b82f6;
+  border-radius: 12px;
+
+  /* ⬆️ Increased width & height */
+  width: 500px;
+  height: 220px;
+
+  padding: 24px 16px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Remove default antd spacing issues */
+.uploadCard :global(.ant-upload-drag-container) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon */
+.icon {
+  font-size: 32px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+/* Main text */
+.text {
+  font-size: 14px;
+  color: #1f2937;
+  text-align: center;
+}
+
+.text span {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* Hint */
+.hint {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+/* Progress */
+.progressWrapper {
+  width: 100%;
+  margin-top: 14px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .uploadCard {
+    max-width: 100%;
+  }
+}

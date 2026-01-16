@@ -1,0 +1,60 @@
+.card{
+    position: relative;
+    /* height: 6vh;
+    width: 90%;
+    background-color: #d9d9d9ab;;
+    border-radius: 6px; */
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 5px 10px; */
+}
+
+.link{
+    padding-left: 15%;
+    color: white;
+    top: 14%;
+    font-size: 3vh;
+    height: fit-content;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+
+.link:hover{
+    color: aqua;
+}
+
+.icon{
+    height: 16vhpx;
+    width: 12vw;
+}
+
+@media(max-width: 1150px){
+    .link{
+    font-size: 1.5vw;
+    }
+    
+  }
+
+  @media(max-width: 968px){
+    .link{
+    font-size: 1.4vw;
+    }
+    
+  }
+
+  @media(max-width: 767px){
+    .link{
+    font-size: 2vw;
+    }
+    
+  }
+
+  @media(max-width: 400px){
+    .link{
+        padding-left: 10%;
+    font-size: 2.5vw;
+    }
+    
+  }

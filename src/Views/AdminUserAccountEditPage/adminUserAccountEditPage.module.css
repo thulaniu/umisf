@@ -1,0 +1,150 @@
+.account-container {
+  background: #f7f7fe;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+.profile-container {
+  margin: 60px 10vw;
+  margin-bottom: 0;
+  padding: 40pt;
+  padding-bottom: 20pt;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.profile-container img {
+  width: 160px;
+}
+
+.profile-type {
+  font-family: "Hind";
+}
+
+.profile-field-container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin-top: 15pt;
+}
+
+.profile-field-name {
+  flex-basis: 30%;
+  font-family: "Hind";
+  font-size: 16px;
+  color: black;
+}
+
+.profile-field-value {
+  flex-basis: 70%;
+  font-family: "Hind";
+  font-weight: 100;
+  font-size: 16px;
+  color: black;
+}
+
+.main-title {
+  background: white;
+  color: #0c0744;
+  margin: 10px 10vw;
+  padding: 8px 13px;
+  font-family: "Hind";
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.main-title a {
+  font-family: "Hind";
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #0c0744;
+}
+
+.main-title img {
+  width: 16px;
+}
+
+.tool-bar {
+  background: white;
+  color: #0c0744;
+  margin: 20px 10vw;
+  padding: 8px 13px;
+  font-family: "Hind";
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.tool-bar button {
+  text-align: left;
+  border: none;
+  background: transparent;
+  margin-right: 63px;
+}
+
+.tool-bar img {
+  width: 20px;
+  margin-right: 0.8vw;
+}
+
+.users-container {
+  background: white;
+  margin: 60px 10vw;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.form-input {
+  border: 0.5px solid #d7d8ed;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-submit-button {
+  background: #0c0744;
+  border: none;
+  color: white;
+  font-family: "Hind";
+  font-size: 20px;
+  padding: 6px;
+  width: 160px;
+}
+
+.multiple-dropdown {
+  font-size: 18px;
+  font-family: "Hind";
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #d7d8ed;
+  color: #939396;
+  align-items: center;
+  cursor: pointer;
+}
+
+.multiple-dropdown img {
+  width: 13px;
+  float: right;
+  margin-top: 1%;
+}
+
+.drop-down-items{
+  border: 1px solid #d7d8ed;
+  padding: 10px;
+}
+
+.drop-down-item{
+  font-size: 16px;
+  font-family: "Hind";
+  padding: 5px;
+  border-bottom: 1px solid #d7d8ed;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 460px) {
+  .profile-field-container {
+    display: block;
+  }
+}

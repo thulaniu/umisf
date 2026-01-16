@@ -1,0 +1,138 @@
+/*Count Down Timer*/
+.content {
+  position: relative;
+  z-index: 6;
+  height: auto;
+  width: 100%;
+}
+.countdown-container {
+  height: 40vw;
+  /* background-color: #f1f4f6; */
+}
+
+.rightdiv {
+  top: 5%;
+  padding: 4vw 20vw 3vw 4vw;
+}
+
+.rightdiv p {
+  text-transform: uppercase;
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
+  color: #0984e3;
+  font-size: 3vw;
+  text-align: center;
+  position: relative;
+  left: 10%;
+}
+
+.flip-card {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.1em;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.top,
+.bottom,
+.flip-card .top-flip,
+.flip-card .bottom-flip {
+  height: 1.2em;
+  line-height: 1.4;
+  padding: 0.5em;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6vw;
+}
+
+.top,
+.flip-card .top-flip {
+  background-color: #0984e3;
+  border-top-right-radius: 0.1em;
+  border-top-left-radius: 0.1em;
+  color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bottom,
+.flip-card .bottom-flip {
+  background-color: black;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  border-bottom-right-radius: 0.1em;
+  border-bottom-left-radius: 0.1em;
+}
+
+.flip-card .top-flip {
+  position: absolute;
+  width: 100%;
+  animation: flip-top 250ms ease-in;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  /* z-index: -10; */
+  transform-origin: bottom;
+}
+
+@keyframes flip-top {
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+.flip-card .bottom-flip {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: flip-bottom 250ms ease-out 250ms;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  /* z-index: -10; */
+  transform-origin: top;
+  transform: rotateX(90deg);
+}
+
+@keyframes flip-bottom {
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.container {
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+}
+
+.container-segment {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: "roboto", Helvetica, sans-serif;
+  font-size: 2.25rem;
+}
+
+.segment {
+  display: flex;
+  gap: 0.1em;
+}
+
+.segment-title {
+  font-size: 1rem;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-weight: bold;
+}

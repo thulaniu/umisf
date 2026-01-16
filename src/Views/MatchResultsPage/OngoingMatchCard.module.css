@@ -1,0 +1,70 @@
+.card {
+  width: 96%;
+  height: 20vw;
+  margin: 2%;
+  border: 3px;
+  font-size: 1vw;
+  border-radius: 15%;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.title {
+  height: 4.5vw;
+  display: flex;
+}
+
+.t-age {
+  width: 50%;
+}
+
+.t-type {
+  width: 50%;
+}
+
+.details {
+  height: 5vw;
+  display: flex;
+  background-image: linear-gradient(rgb(211, 208, 208), rgb(122, 122, 122));
+}
+
+.d-player1 {
+  width: 50%;
+  /* height: 60%; */
+}
+
+.d-player2 {
+  width: 50%;
+  /* height: 60%; */
+}
+
+.dp {
+  border-radius: 50%;
+  position: absolute;
+  height: 5vw;
+  width: 5vw;
+  margin-left: 4vw;
+}
+
+.dp-left {
+  object-fit: cover;
+  border-radius: 50%;
+}
+.results {
+  height: 10.5vw;
+  background-color: rgb(65, 65, 65);
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.table {
+    position: relative;
+  color: white;
+  width: 9vw;
+  height: 3vw;
+  margin-left: 8.9vw;
+  margin-top: 0.5vw;
+}
+

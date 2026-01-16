@@ -1,0 +1,277 @@
+.body {
+  background: #040924;
+  width: 100%;
+  height: 100vh;
+  font-family: "Hind", sans-serif;
+  overflow: auto;
+}
+
+.title {
+  color: #185de1;
+  font-family: "Hind", sans-serif;
+  font-size: 4vw;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  width: 87%;
+  height: fit-content;
+  margin-left: 7vw;
+  background: rgba(58, 103, 82, 0.59);
+  border-radius: 5px;
+  color: #50ab08;
+  padding: 3px;
+}
+
+.info-container-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  background: rgba(58, 103, 82, 0.59);
+  border-radius: 5px;
+  color: #50ab08;
+  padding: 3px;
+}
+.info {
+  font-size: 1vw;
+  font-family: "Hind", sans-serif;
+}
+
+.info button {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  font-family: "Hind", sans-serif;
+}
+
+.info-logo {
+  height: 1vw;
+  margin-top: 0.05%;
+}
+
+.register-form {
+  background-image: url("../../../assests/images/register-bg.png");
+  background-position: center;
+  height: 30vw;
+  width: 60%;
+  background-repeat: no-repeat;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uploader {
+  width: 5vw;
+  border-radius: 50%;
+}
+
+.register-form-content {
+  /* position: absolute; */
+  width: 100%;
+  margin-top: 3vw;
+}
+
+.input-text {
+  font-family: "Hind", sans-serif;
+}
+
+.btn {
+  margin-right: 7px;
+  float: right;
+  width: 200px;
+  height: 50px;
+  font-family: "Hind";
+  font-size: 20px;
+  border-radius: 7px;
+  background: transparent;
+  color: white;
+  border: 0.5px solid rgb(218, 214, 214);
+  transition: ease-in-out 1s;
+}
+
+.btn:hover {
+  background: rgb(46, 92, 217);
+}
+
+
+.plus {
+  margin-left: 50vw;
+  margin-top: -4vw;
+}
+
+.plus:hover {
+  cursor: pointer;
+}
+
+.plus-minus {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.plus-btn {
+  background: transparent;
+  border: none;
+  margin-left: 10px;
+}
+
+.plus-btn img {
+  width: 20px;
+}
+
+.mdbinput {
+  font-family: "Hind";
+  font-size: 1vw;
+  padding: 1vw;
+  min-height: 3vw;
+}
+
+.tournament-guidlines{
+  text-align: right;
+  width: 87%;
+  height: fit-content;
+  margin-left: 7vw;
+  margin-bottom: 1vw;
+  color: white;
+}
+
+.tournament-guidlines a{
+  font-size: 1vw;
+  text-decoration: none;
+  color: white;
+  font-family: "Hind";
+  font-weight: "bold";
+}
+
+.tournament-guidlines a:hover{
+  color: rgb(227, 67, 67);
+}
+
+.tournament-guidlines img{
+  width: 1.7vw;
+}
+@media (max-width: 1037px) {
+  .tournament-guidlines a{
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width:983px){
+  .plus-btn img {
+    width: 15px;
+    margin-top: -70px;
+  }
+}
+
+@media (max-width: 920px) {
+  .body {
+    height: 125vh;
+  }
+  .title {
+    font-size: 5vw;
+  }
+
+  .info {
+    font-size: 1.2vw;
+  }
+
+  .info-logo{
+    height: 1.2vw;
+  }
+
+  .btn {
+    font-size: 2vw;
+  }
+  .tournament-guidlines a{
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 720px) {
+  .body {
+    height: 130vh;
+  }
+  .title {
+    font-size: 6vw;
+  }
+
+  .info {
+    font-size: 1.5vw;
+  }
+
+  .btn {
+    font-size: 2vw;
+    width: 150px;
+  }
+
+  .info-logo {
+    height: 1.5vw;
+  }
+  .tournament-guidlines a{
+    font-size: 1.5vw;
+  }
+
+  .tournament-guidlines img{
+    width: 2.2vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .title {
+    font-size: 7vw;
+  }
+
+  .info {
+    font-size: 2vw;
+  }
+
+  .btn {
+    font-size: 3vw;
+    width: 150px;
+  }
+  .info-logo {
+    height: 2vw;
+  }
+  .tournament-guidlines a{
+    font-size: 1.7vw;
+  }
+  .tournament-guidlines img{
+    width: 2.4vw;
+  }
+}
+
+@media (max-width: 520px) {
+  .btn {
+    width: 100px;
+    height: 40px;
+  }
+
+  .tournament-guidlines a{
+    font-size: 2vw;
+  }
+  .tournament-guidlines img{
+    width: 2.5vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .info {
+    font-size: 3vw;
+  }
+  
+  .info-logo{
+    height: 3vw;
+  }
+
+  .tournament-guidlines a{
+    font-size: 2.5vw;
+  }
+  .tournament-guidlines img{
+    width: 3.5vw;
+  }
+}

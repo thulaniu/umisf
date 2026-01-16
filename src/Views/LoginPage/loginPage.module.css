@@ -1,0 +1,35 @@
+.mdbinput {
+    font-family: "Hind";
+    font-size: 1vw;
+    padding: 1vw;
+    min-height: 3vw;
+  }
+
+  .login-container{
+    width: 30vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    position: relative;
+    padding: 3vw 1vw;
+    background:rgb(4, 26, 77) ;
+    transform: translateY(40%);
+    border: 1px solid rgb(191, 188, 188);
+  }
+
+  .login-container h1{
+    font-family: "Hind";
+    font-size: 3vw;
+    color: rgb(137, 131, 131);
+  }
+
+  .button{
+    background: rgb(128, 123, 123);
+    color: white;
+    font-family: "Hind";
+    font-size: 1.5vw;
+    padding: 0.4vw 3vw;
+    margin-top: 2.5vw;
+    border: none;
+  }

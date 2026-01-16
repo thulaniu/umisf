@@ -1,0 +1,110 @@
+.body {
+  background: #040924;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Hind", sans-serif;
+  display: block;
+overflow: auto;
+}
+
+.title {
+  color: #185de1;
+  font-family: "Hind", sans-serif;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  width: 87%;
+  height: fix-content;
+  margin-left: 7vw;
+  background: rgba(58, 103, 82, 0.59);
+  border-radius: 5px;
+  color: #50ab08;
+  padding: 3px;
+
+}
+.info {
+  font-size: 1vw;
+  font-family: "Hind", sans-serif;
+}
+
+.info-logo {
+  height: 1vw;
+  margin-top: 0.15%;
+}
+
+.register-form{
+    background-image: url('../../../assests/images/register-bg.png');
+    height: 30vw;
+    background-repeat: no-repeat;
+    margin-left: 22vw;
+    margin-right: 22vw;
+    
+}
+
+.uploader{
+    width: 5vw;
+    border-radius: 50%;
+}
+
+.register-form-content{
+    /* position: absolute; */
+    width: 50vw;
+    margin-top: 2vw;
+    
+}
+
+
+
+.input-text{
+    font-family: "Hind", sans-serif;
+}
+
+@media (max-width: 2175px){
+    .picker-bg{
+        right: 1.9vw;
+    }
+}
+@media (max-width:1980px){
+    .picker-bg{
+        right: 1.95vw;
+    }
+}
+@media (max-width:1825px){
+    .picker-bg{
+        right: 2vw;
+    }
+}
+
+@media (max-width:1735px){
+    .picker-bg{
+        right: 2.1vw;
+    }
+}
+
+@media (max-width:1500px){
+    .picker-bg{
+        right: 2.25vw;
+    }
+}
+
+.btn{
+    position: absolute;
+    float: right;
+    right: 1vw;
+    margin-right: -20vw;
+    margin-top: -3vw;
+    width: 18vw;
+  }
+
+  .plus{
+margin-left: 50vw;
+   margin-top: -4vw
+  }
+
+  .plus:hover{
+    cursor: pointer;
+  }

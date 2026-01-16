@@ -1,0 +1,284 @@
+.flyer-container {
+  position: relative;
+  top: 0;
+  height: fit-content;
+}
+
+.flyer-image {
+  position: relative;
+  top: 0;
+  left: 17vw;
+  width: 62vw;
+  z-index: -10;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translate(0);
+  }
+  100% {
+    transform: translateX(20px);
+    -webkit-transform: translateX(20px)
+  }
+} 
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+    -webkit-transform: translateX(20px)
+  }
+}
+.action {
+  position: absolute;
+  top: 10vw;
+  left: 55vw;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 6vw;
+  font-style: italic;
+  color: #0984e3;
+}
+
+.starts {
+  position: absolute;
+  top: 16vw;
+  left: 60vw;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 6vw;
+  color: #0984e3;
+}
+
+.from {
+  position: absolute;
+  top: 23vw;
+  left: 73vw;
+  z-index: 2;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 2vw;
+  color: #0984e3;
+}
+
+.day {
+  position: absolute;
+  top: 27vw;
+  left: 74vw;
+  z-index: 2;
+  font-family: "Hind";
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 4vw;
+  color: #0984e3;
+}
+
+.month {
+  position: absolute;
+  top: 33vw;
+  left: 70vw;
+  font-family: "Roboto";
+  color: #7ba6c8;
+  font-size: 1.5vw;
+}
+
+.venue {
+  position: absolute;
+  top: 36vw;
+  left: 60.5vw;
+  font-family: "Roboto";
+  color: #7ba6c8;
+  font-size: 1.5vw;
+}
+
+.venue p{
+  font-size: 1.5vw;
+  font-family: "Roboto";
+  color: #7ba6c8;
+  line-height: 1vw;
+}
+
+/* .register {
+  position: absolute;
+  top: 43vw;
+  left: 69vw;
+  padding: 6px 25px;
+  text-decoration: none;
+  color: white;
+  background-color: #0984e3;
+  cursor: pointer;
+  font-style: italic;
+  font-size: 2vw;
+  font-family: "Hind";
+  transition: ease-in-out 1s;
+}
+ */
+
+
+.schedule{
+  position: absolute;
+  top: 43vw;
+  left: 62vw;
+  padding: 6px 25px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 2vw;
+  font-family: "Hind";
+  transition: ease-in-out 1s;
+}
+
+.schedule a{
+  font-family: "Hind";
+  background-color: #0984e3;
+  color: white;
+  padding: 0.5vw;
+  text-decoration: none;
+}
+
+.schedule a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.download-image{
+  width: 6.5vw;
+  height: 6.5vw;
+  border: 1px solid rgb(59, 130, 220);
+  border-radius: 50%;
+  padding: 1vw;
+  margin-right: 0.5vw;
+  background-color: white;
+}
+
+.register-links{
+  font-family: "Hind";
+}
+
+.register-links:hover{
+  text-decoration: none;
+}
+
+.register:hover{
+  color: white;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.before {
+  position: absolute;
+  top: 47vw;
+  left: 75vw;
+  padding: 6px 25px;
+  font-family: "Hind";
+  font-size: 1vw;
+  color: #7ba6c8;
+  font-style: italic;
+}
+.more-info,
+.more-info a {
+  text-align: center;
+  font-family: "Hind";
+  font-size: 1vw;
+}
+
+.overlay {
+  padding: 5px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(9, 132, 227, 0.2));
+  z-index: -10;
+}
+@media screen and (max-width: 770px) {
+  .before {
+    top: 46vw;
+    font-size: 1vw;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .flyer-image {
+    width: 95vw;
+    left: 0;
+  }
+  .action {
+    font-size: 9vw;
+    left: 50vw;
+  }
+
+  .starts {
+    position: absolute;
+    top: 20vw;
+    left: 60vw;
+    font-size: 9vw;
+  }
+
+  .from {
+    top: 30vw;
+    left: 80vw;
+  }
+
+  .day {
+    top: 35vw;
+    left: 80vw;
+  }
+
+  .month {
+    top: 40vw;
+    left: 76vw;
+  }
+
+  .venue {
+    top: 45vw;
+    left: 67vw;
+  }
+
+  /* .register {
+    top: 55vw;
+    left: 69vw;
+    font-size: 4vw;
+  } */
+
+  .schedule {
+    top: 55vw;
+    left: 60vw;
+    font-size: 3vw;
+  }
+
+  .download-image{
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+
+  .before {
+    top: 65vw;
+    left: 75vw;
+    font-size: 1.5vw;
+  }
+
+  .more-info,
+  .more-info a {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .schedule {
+    top: 60vw;
+    left: 43vw;
+  }
+
+  .download-image{
+    width: 10.5vw;
+    height: 10.5vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .schedule {
+    top: 60vw;
+    left: 41vw;
+  }
+}

@@ -1,0 +1,96 @@
+.gallery-container {
+  background: #f7f7fe;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-title {
+  background: white;
+  margin: 10px 10vw;
+  padding: 8px 13px;
+}
+
+.main-title a {
+  font-family: "Hind";
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #0c0744;
+}
+
+.tool-bar {
+  background: white;
+  color: #0c0744;
+  margin: 20px 10vw;
+  padding: 8px 13px;
+  font-family: "Hind";
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.tool-bar button {
+  text-align: left;
+  border: none;
+  background: transparent;
+}
+
+.tool-bar img {
+  width: 20px;
+  margin-right: 1vw;
+}
+
+.folder {
+  padding: 16px;
+  align-items: center;
+  display: block;
+  border-bottom: 1px solid #d7d8ed;
+  width: 100%;
+  transition: ease-in-out 0.7s;
+  display: flex;
+}
+
+.folder a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Hind";
+  color: black;
+  flex: 1;
+}
+
+.folder:hover{
+  background: #f7f7fe;
+  transform: scale(1.01);
+}
+
+.folder:hover .folder-delete{
+  display: block;
+}
+
+.folder img {
+  width: 30px;
+  margin-right: 2vw;
+}
+
+.folder-container {
+  background: white;
+  color: black;
+  margin: 60px 10vw;
+  padding: 2vw;
+  margin-bottom: 0;
+}
+
+.folder-delete{
+  border: none;
+  background: transparent;
+  display: none;
+  height:25px;
+  transition: ease-in-out 10s;
+}
+
+.folder-delete img{
+  width: 25px;
+  position: relative;
+  top: -0.5vw;
+}

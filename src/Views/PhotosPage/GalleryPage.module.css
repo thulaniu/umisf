@@ -1,0 +1,76 @@
+.cover-img {
+  height: 70vh;
+  background-color: black;
+  background-image: url("../../assests/images/photos_page.webp");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  z-index: -1;
+}
+
+.cover-title {
+  position: relative;
+  top: 55%;
+  padding-left: 6.5%;
+}
+
+.typing-demo {
+  width: 12ch;
+  animation: typing 2s steps(40), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 4.5vw;
+  font-family: "Hind";
+  color: #0984E3;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.bottom-para {
+  margin-top: 0.5%;
+}
+
+.bottom-para p{
+  font-size: 1.25vw;
+  font-family: "Hind";
+  color: #83ACCB;
+}
+.gallery{
+  margin-top: -10vw;
+  align-items: center;
+}
+
+.gallery-title {
+  height: 3rem;
+  padding-left: 3.3%;
+  padding-bottom: 5%;
+}
+
+.gallery-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 968px) {
+  .typing-demo {
+    font-size: 6vw;
+  }
+
+  .bottom-para p{
+    font-size: 2vw;
+  }
+
+}

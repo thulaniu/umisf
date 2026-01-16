@@ -1,0 +1,63 @@
+.sponsers {
+  background: url("../../../assests/images/sponser-back.jpg");
+  /* background-color: rgb(154, 148, 148); */
+  background-size: cover;
+  text-align: center;
+  padding-top: 2vw;
+  padding-bottom: 4vw;
+}
+
+.sponsers img {
+  height: 3.5vw;
+  width: auto;
+}
+
+.sponsers p {
+  font-family: "Hind";
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.sponser {
+  margin: 1vw;
+  padding: 1vw;
+  background-color: rgba(0,0,0,0.07);
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 720px) {
+  .sponsers p {
+    font-size: 1.4vw;
+  }
+
+  .sponsers img {
+    height: 3.5vw;
+    width: auto;
+  }
+  
+  .sponser{
+    padding: 2vw;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .sponsers p {
+    font-size: 1.4vw;
+  }
+  .sponsers img {
+    height: 4vw;
+    width: auto;
+    
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .sponsers p {
+    font-size: 2vw;
+  }
+  .sponsers img {
+    height: 5vw;
+    width: auto;
+  }
+}

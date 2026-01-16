@@ -1,0 +1,91 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.3vw 10vw;
+  background-color: #0c0744;
+}
+
+.header-admin-profile {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-family: "Hind";
+  align-items: center;
+}
+
+.header-logo img {
+  width: 50px;
+}
+
+.header-admin {
+  font-size: 15px;
+  margin-right: 1vw;
+  font-weight: bold;
+}
+
+.header-drop-down-logo {
+  width: 40px;
+}
+
+.header-drop-down-icon {
+  background: transparent;
+  border: none;
+}
+
+.header-dropdown img {
+  width: 35px;
+}
+
+.header-drop-down-icon img {
+  width: 20px;
+}
+
+.header-dropdown {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+}
+
+.header-drop-down-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: left;
+}
+
+.header-drop-down-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  font-family: "Hind";
+  text-align: left;
+  font-weight: bold;
+}
+
+.header-drop-down-content button {
+  width: 100%;
+  font-size: 15px;
+  padding: 12px 16px;
+  font-family: "Hind";
+  border: none;
+  font-weight: bold;
+  background: rgb(229, 124, 124);
+}
+
+.header-drop-down-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.header-drop-down-content a:nth-child(2):hover {
+  background-color: rgb(239, 93, 93);
+}
+
+.header-dropdown:hover .header-drop-down-content {
+  display: block;
+}

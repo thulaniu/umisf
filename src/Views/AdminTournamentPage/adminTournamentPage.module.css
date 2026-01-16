@@ -1,0 +1,150 @@
+.tournament-container {
+  background: #f7f7fe;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-title {
+    background: white;
+    margin: 10px 10vw;
+    padding: 8px 13px;
+  }
+  
+  .main-title a {
+    font-family: "Hind";
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #0c0744;
+  }
+  
+  .tool-bar {
+    background: white;
+    color: #0c0744;
+    margin: 20px 10vw;
+    padding: 8px 13px;
+    font-family: "Hind";
+    font-weight: lighter;
+    font-size: 16px;
+  }
+  
+  .tool-bar a{
+    text-align: left;
+    text-decoration: none;
+    margin-right: 63px;
+    font-family: "Hind";
+    font-size: 16px;
+    color: black;
+  }
+
+  .tool-bar img {
+    width: 20px;
+    margin-right: 1vw;
+  }
+
+  .sub-titles{
+    background: white;
+    margin: 10px 10vw;
+    padding: 8px 13px;
+    display: flex;
+  }
+
+  .sub-titles a {
+    font-family: "Hind";
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 19px;
+    text-decoration: none;
+    color: #0c0744;
+    flex:1;
+  }
+
+  .sub-title-arrow,.sub-title-arrow-message{
+    width:13px;
+    margin-right: 20px;
+    transition: ease-in-out 0.1ms;
+  }
+
+  .sub-title-arrow-message{
+    transform: rotate(90deg);
+  }
+
+  .sub-titles:hover .sub-title-arrow{
+    transform: rotate(90deg);
+  }
+
+  .message{
+    display: flex;
+    justify-content: center;
+    height:300px;
+    background: white;
+    margin: 10px 10vw;
+    padding: 8px 13px;
+    font-family: "Hind";
+    font-size: 18px;
+    align-items: center;
+  }
+
+  .tournament-details{
+    display:block;
+  }
+
+  .tournament-details-view{
+    background: white;
+    margin: 10px 10vw;
+    padding: 8px 13px;
+    font-family: "Hind";
+    font-size: 18px;
+  }
+
+  .form-field-container {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 15pt;
+  }
+  
+  .form-field-name {
+    flex-basis: 30%;
+    font-family: "Hind";
+    font-size: 16px;
+    color: black;
+  }
+  
+  .form-field-value {
+    flex-basis: 70%;
+    font-family: "Hind";
+    font-weight: 100;
+    font-size: 16px;
+    color: black;
+  }
+
+  .form-field-value-tshirt{
+    flex-basis: 70%;
+    font-family: "Hind";
+    font-weight: 100;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .t-shirt{
+    background-color: #f7f7fe;
+    flex-basis: 20%;
+   }
+
+   .t-shirt img{
+    width:200px
+   }
+
+   .flyer{
+    flex-basis: 20%;
+   }
+
+   .flyer img{
+    width:100%;
+   }

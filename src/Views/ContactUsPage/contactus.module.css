@@ -1,0 +1,131 @@
+.contct-us-form{
+    margin:8vw;
+    padding: 7vw;
+    padding-top: 5vw;
+    border: 0.5px rgb(224, 220, 220) solid;
+    background-color: #F1F4F6;
+}
+
+.label{
+    font-size: 1vw;
+    font-family: 'Hind';
+    font-weight: bold;
+}
+
+.input{
+    font-size: 0.9vw;
+}
+
+.send-button{
+    width:150px;
+    margin-top: 15px;
+    font-size: 1vw;
+    font-family:'Hind';
+}
+
+.headerDiv{
+    background-image:linear-gradient(to right,rgba(0,0,0,0.5),rgba(9, 132, 227,0.4)),
+                url('../../assests/images/R.jpeg');
+    color:white;
+    width:100%;
+    height:57vh;
+    background-size: cover;
+    text-align: center;
+    background-position:top;
+}
+
+
+
+.UMiSF-container{
+    width:100%;
+    position: relative;
+    top:45%;
+    padding-left: 6%;
+    z-index: 0;
+}
+
+.UMiSF-container h1{
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'roboto';
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 1.5vw;
+    /* height: 15vw; */
+}
+
+.captain-contaier{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.captains,.vice-captains{
+    display:inline-flex;
+}
+
+.member{
+    margin: 1vw 2vw;
+}
+
+@media (max-width: 920px) {
+    .label{
+        font-size: 1.3vw;
+    }
+}
+
+@media (max-width: 720px) {
+    .label{
+        font-size: 1.6vw;
+    }
+}
+
+@media (max-width: 620px) {
+    .label{
+        font-size: 1.8vw;
+    }
+
+    .input{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 520px) {
+    .label{
+        font-size: 2.3vw;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .member{
+        padding: 0 5vw;
+    }
+    .input{
+        font-size: 2.3vw;
+    }
+}
+
+@media (max-width: 420px) {
+    .label{
+        font-size: 3vw;
+    }
+
+    .input{
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 320px) {
+    
+}
+
+

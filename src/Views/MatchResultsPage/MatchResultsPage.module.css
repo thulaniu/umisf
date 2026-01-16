@@ -1,0 +1,139 @@
+.body {
+  height: auto;
+  background-color: #ede5e5;
+  padding-bottom: 2px;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+  
+}
+
+/* .finished-match-result-section{
+  position: absolute;
+  width: 69%;
+} */
+
+.ongoing-match-result-section{
+  position: absolute;
+  width: 30%;
+  margin-left: 69%;
+  margin-top: 1%;
+  margin-right: 0;
+  display: block;
+  
+}
+.match-result-table{
+  padding: 30px;
+  display: block;
+  /* overflow: auto; */
+
+  border-radius: 20px;
+  
+}
+
+.header{
+  /* position: absolute; */
+  height: 100px;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* flex-basis: 60%; */
+  padding:10px;
+ 
+}
+
+
+.title{
+  margin: 1%;
+}
+
+.select-container{
+/* height: 60%;
+width: 50%;
+margin: 1%; */
+align-items: center;
+padding: 15px;
+}
+
+.select-btn{
+/* position: relative;
+float: right; */
+width:150px;
+}
+
+
+.select-menu{
+  height: fit-content;
+}
+
+.span-font{
+  font-size:15pt;
+  font-weight:bold;
+}
+
+
+@media (max-width: 850px){
+  .select-btn{
+      width: 100px;
+  }
+}
+
+@media (max-width: 658px){
+  .header{
+      flex-direction: column;
+  }
+  .select-btn{
+    width: 90px;
+  }
+
+  .select-container{
+    padding: 5px;
+  }
+  .span-font{
+    font-size: 12pt;
+  }
+}
+
+@media (max-width: 400px){
+  .header{
+      flex-direction: column;
+  }
+  .select-btn{
+    width: 70px;
+  }
+
+  .select-container{
+    padding: 5px;
+  }
+
+  .span-font{
+    font-size: 10pt;
+  }
+}
+
+.container{
+  background-image: url("./temp_img/shuttle.jpg");
+  padding-top:1px;
+  padding-bottom: 1px;
+  background-repeat: repeat-y;
+}
+
+@media(max-width: 600px){
+  .container{
+  background-image: url("./temp_img/shuttle-sm.jpg");
+  padding-top:1px;
+  padding-bottom: 1px;
+  background-repeat: repeat-y;
+  }
+}
+
+/* @media(max-width: px){
+  .container{
+  background-image: url("./temp_img/shuttle-sm.jpg");
+  padding-top:1px;
+  padding-bottom: 1px;
+  background-repeat: repeat-y;
+  }
+} */

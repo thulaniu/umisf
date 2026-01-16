@@ -1,0 +1,161 @@
+.navbar-container {
+  align-items: center;
+  margin: 2vw 6vw;
+}
+
+.navbar-item {
+  list-style: none;
+  margin: 0 0.5vw;
+}
+
+.navbar-item a{
+  text-decoration: none;
+}
+
+.navbar-item-link {
+  text-decoration: none;
+  color: black;
+  font-family: "Hind";
+  font-size: 14px;
+  padding: 7px;
+  line-height: 25px;
+}
+
+.navbar-item-link:hover {
+  background: white;
+}
+
+.navbar-item-link img {
+  width: 20px;
+}
+
+.navbar-ul {
+  display: flex;
+  flex-direction: row;
+  transition: ease-in-out 0.1s;
+}
+
+.navbar-sections {
+  display: flex;
+  flex-direction: row;
+  transition: ease-in-out 0.1s;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1390px) {
+  .navbar-ul {
+    display: block;
+  }
+
+  .navbar-item-link{
+    font-size: 15px;
+  }
+
+  .navbar-sections {
+    justify-content: space-between;
+  }
+
+  .navbar-container {
+    margin: 40px 6vw;
+    margin-right: 9vw;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .navbar-item-link{
+    font-size: 13px;
+  }
+}
+
+/* minimized side bar */
+
+.side-img {
+  width: 50px;
+  height: 46px;
+  margin-left: 7vw;
+  position: absolute;
+  top: 5vw;
+  display: none;
+}
+
+.toggle-button {
+  font-size: 7vw;
+  margin-left: 4vw;
+  display: none;
+}
+
+.navBarItem {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-family: "Hind";
+}
+
+.navBarItem a {
+  color: white;
+}
+
+.navSideBar {
+  background: rgba(0, 0, 0, 0.8);
+  min-height: 100vh;
+  width: 80%;
+  display: none;
+  margin: 4vw;
+  position: absolute;
+  transition: ease-in-out 1s;
+}
+
+@media screen and (max-width: 500px) {
+  .toggle-button {
+    display: block;
+  }
+
+  .navBarItem {
+    display: block;
+    margin:25px;
+    top: 10vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-ul {
+    display: none;
+  }
+
+  .navbar-item-link img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    margin-right: 8px;
+  }
+
+  .navbar-item-link:hover {
+    background: white;
+    color:black
+  }
+
+  .navbar-item-link:hover img{
+    -webkit-filter: invert(0%);
+    filter: invert(0%);
+  }
+
+  .side-img {
+    display: block;
+  }
+
+  .timer-blocks {
+    width: 60px;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .navSideBar {
+    width: 0;
+  }
+
+  .navSideBar li {
+    display: none;
+  }
+}

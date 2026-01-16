@@ -1,0 +1,60 @@
+.row{
+    border-radius: 2px;
+    height: 130px;
+    /* font-size: 1vw; */
+    background-color: white;
+    /* padding: 1.2vw; */
+    border: 10px;
+    border-color: black;
+    margin: 5px ;
+    /* width: 600px; */
+    
+}
+
+.row:hover{
+    cursor: pointer;
+    background-color: #0d6dfdbe;
+    color: white;
+}
+
+.match-result-table{
+    /* width: 85%; */
+}
+
+.text-wrapper{
+    padding-top: 2%;
+}
+.age-group{
+    font-size: 10px;
+    font-weight: bold;
+    height: 20px;
+    letter-spacing: 2px;
+    padding: 1px;
+}
+
+.players-text{
+    font-size: 20px;
+    font-weight: bold;
+    height: 30px;  
+    letter-spacing: 4px;
+}
+
+.type{
+    font-size: 0.7vw;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .players-text{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .players-text{
+        font-size: 12px;
+    }
+    .text-wrapper{
+        padding: 10%;
+    }
+}

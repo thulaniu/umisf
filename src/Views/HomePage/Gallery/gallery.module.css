@@ -1,0 +1,162 @@
+.gallery-container {
+  background-color: #f1f4f6;
+  padding: 2vw;
+}
+
+.gallery-title {
+  text-align: center;
+  padding: 3vw;
+  padding-bottom: 0;
+}
+
+.gallery-title,
+.gallery-title p {
+  font-family: "Hind", sans-serif;
+  font-size: 3vw;
+}
+
+.gallery-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.gallery-box-row {
+  display: flex;
+  flex-direction: column;
+  width: 33.5%;
+}
+
+.gallery-box-row img {
+  width: 100%;
+}
+
+.gallery-container a {
+  text-decoration: none;
+  padding: 8px 20px;
+  width: fit-content;
+  text-align: center;
+  background: transparent;
+  color: #0984e3;
+  border: 1px solid #0984e3;
+  cursor: pointer;
+  font-size: 1vw;
+  position: relative;
+  overflow: hidden;
+  font-family: "Hind", sans-serif;
+  transition: 0.8s;
+  z-index: 0;
+}
+
+.gallery-container a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  width: 100%;
+  height: 0%;
+  background: #0984e3;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.gallery-container a:hover::before {
+  height: 180%;
+}
+
+.gallery-container a:hover {
+  color: #fff;
+}
+
+.gallery-view-more {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-box-row figure {
+  position: relative;
+}
+
+.gallery-box-row figure::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.gallery-box-row figure:hover::before {
+  -webkit-animation: circle 0.75s;
+  animation: circle 0.75s;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .gallery-view-more a {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .gallery-view-more a {
+    font-size: 1.8vw;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .gallery-box {
+    display: block;
+    padding: 0 50px;
+  }
+
+  .gallery-box-row {
+    width: 100%;
+  }
+
+  .gallery-title,
+  .gallery-title p {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .gallery-view-more a {
+    font-size: 2vw;
+  }
+}
