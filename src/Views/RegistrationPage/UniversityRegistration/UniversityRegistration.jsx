@@ -1,31 +1,64 @@
 import React, { useState } from "react";
 import HeaderPage from "../../HeaderPage/HeaderPage";
 import Footer from "../../HomePage/Footer/footer";
-import ImageUploader from "../Common/imageUploader/ImageUploader";
 import styles from "./UniversityRegistration.module.css";
+import MyDropzone from "../Common/MyDropzone/MyDropzone";
+
+/* ================= VALIDATION HELPERS ================= */
+const isValidName = (name) => /^[A-Za-z\s]+$/.test(name.trim());
+const isValidPhone = (phone) => /^[0-9]{10}$/.test(phone);
 
 const emptyMember = { name: "", contact: "", regNo: "" };
 
 export default function UniversityRegistration() {
-  // dropdown states
+  /* ================= STATES ================= */
   const [university, setUniversity] = useState("");
   const [category, setCategory] = useState("");
   const [teamName, setTeamName] = useState("");
 
-  // members
   const [members, setMembers] = useState([]);
   const [current, setCurrent] = useState(emptyMember);
   const [editIndex, setEditIndex] = useState(null);
 
-  // image uploader
-  const [fileList, setFileList] = useState([]);
-  const [image, setImage] = useState(null);
-  const [imageName, setImageName] = useState("");
+  const [agreed, setAgreed] = useState(false);
+  const [error, setError] = useState("");
+
+  const [fieldErrors, setFieldErrors] = useState({
+    name: "",
+    contact: "",
+    regNo: "",
+  });
 
   const isMemberLimitReached = members.length >= 8;
 
+  /* ================= FILE UPLOAD ================= */
+  const handleImageDrop = (file) => {
+    console.log("Uploaded file:", file);
+  };
+
+  /* ================= ADD / UPDATE MEMBER ================= */
   const addOrUpdateMember = () => {
-    if (!current.name || !current.contact || !current.regNo) return;
+    const errors = { name: "", contact: "", regNo: "" };
+
+    if (!current.name) {
+      errors.name = "Full name is required.";
+    } else if (!isValidName(current.name)) {
+      errors.name = "Only letters and spaces allowed.";
+    }
+
+    if (!current.contact) {
+      errors.contact = "Contact number is required.";
+    } else if (!isValidPhone(current.contact)) {
+      errors.contact = "Must be exactly 10 digits.";
+    }
+
+    if (!current.regNo) {
+      errors.regNo = "Registration number is required.";
+    }
+
+    setFieldErrors(errors);
+
+    if (errors.name || errors.contact || errors.regNo) return;
 
     if (editIndex !== null) {
       const updated = [...members];
@@ -38,8 +71,10 @@ export default function UniversityRegistration() {
     }
 
     setCurrent(emptyMember);
+    setFieldErrors({ name: "", contact: "", regNo: "" });
   };
 
+  /* ================= EDIT / DELETE ================= */
   const editMember = (index) => {
     setCurrent(members[index]);
     setEditIndex(index);
@@ -49,30 +84,70 @@ export default function UniversityRegistration() {
     setMembers(members.filter((_, i) => i !== index));
   };
 
+  /* ================= REGISTER TEAM ================= */
+  const handleRegisterTeam = () => {
+    setError("");
+
+    if (!university || !category || !teamName) {
+      setError("Please select University, Category, and Team Name.");
+      return;
+    }
+
+    if (members.length < 5) {
+      setError("You must add at least 5 members to register the team.");
+      return;
+    }
+
+    if (!agreed) {
+      setError("You must agree to the tournament guidelines to register.");
+      return;
+    }
+
+    alert("Team registered successfully!");
+  };
+
   return (
     <>
-      {/* ================= HEADER ================= */}
       <HeaderPage />
 
-      {/* ================= PAGE BODY ================= */}
       <main className={styles.pageWrapper}>
         <h1 className={styles.title}>Event Registration – University Team</h1>
 
-        {/* Info Card */}
+        {/* ================= INFO CARD ================= */}
         <div className={styles.infoCard}>
-          <p>
-            <strong>UMISF Badminton Championship</strong>
-          </p>
+          <p><strong>UMISF Badminton Championship</strong></p>
+
           <ul>
             <li>📍 MBA</li>
             <li>📅 26th – 2nd February 2026</li>
             <li>⏰ Entries close: 20th February 2026</li>
           </ul>
+
+          <a
+            href="/documents/UMISF_Badminton_Guidelines.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.guidelineLink}
+          >
+            📄 View Tournament Guidelines
+          </a>
+
+          <div className={styles.agreement}>
+            <input
+              type="checkbox"
+              id="agree"
+              checked={agreed}
+              onChange={(e) => setAgreed(e.target.checked)}
+            />
+            <label htmlFor="agree">
+              I hereby agree to comply with the rules governing the tournament
+              and the decision of the Tournament Committee.
+            </label>
+          </div>
         </div>
 
-        {/* Form Card */}
+        {/* ================= FORM CARD ================= */}
         <div className={styles.formCard}>
-          {/* Dropdowns */}
           <div className={styles.grid}>
             <div>
               <label>University</label>
@@ -92,9 +167,7 @@ export default function UniversityRegistration() {
                 <option>Uva Wellassa University</option>
                 <option>Wayamba University of Sri Lanka</option>
                 <option>South Eastern University of Sri Lanka</option>
-                <option>
-                  Gampaha Wickramarachchi University of Indigenous Medicine
-                </option>
+                <option>Gampaha Wickramarachchi University of Indigenous Medicine</option>
               </select>
             </div>
 
@@ -117,26 +190,49 @@ export default function UniversityRegistration() {
             </div>
           </div>
 
-          {/* Team Members */}
           <h3 className={styles.sectionTitle}>Team Members</h3>
-          <p className={styles.helperText}>Maximum of 8 members per team</p>
+          <p className={styles.helperText}>Minimum of 5 and maximum of 8 members per team</p>
 
+          {/* ================= MEMBER INPUT ================= */}
           <div className={styles.memberInput}>
-            <input
-              placeholder="Full Name"
-              value={current.name}
-              onChange={(e) => setCurrent({ ...current, name: e.target.value })}
-            />
-            <input
-              placeholder="Contact Number"
-              value={current.contact}
-              onChange={(e) => setCurrent({ ...current, contact: e.target.value })}
-            />
-            <input
-              placeholder="Registration Number"
-              value={current.regNo}
-              onChange={(e) => setCurrent({ ...current, regNo: e.target.value })}
-            />
+            <div>
+              <input
+                placeholder="Full Name"
+                value={current.name}
+                onChange={(e) =>
+                  setCurrent({ ...current, name: e.target.value })
+                }
+              />
+              {fieldErrors.name && (
+                <span className={styles.fieldError}>{fieldErrors.name}</span>
+              )}
+            </div>
+
+            <div>
+              <input
+                placeholder="Contact Number"
+                value={current.contact}
+                onChange={(e) =>
+                  setCurrent({ ...current, contact: e.target.value })
+                }
+              />
+              {fieldErrors.contact && (
+                <span className={styles.fieldError}>{fieldErrors.contact}</span>
+              )}
+            </div>
+
+            <div>
+              <input
+                placeholder="Registration Number"
+                value={current.regNo}
+                onChange={(e) =>
+                  setCurrent({ ...current, regNo: e.target.value })
+                }
+              />
+              {fieldErrors.regNo && (
+                <span className={styles.fieldError}>{fieldErrors.regNo}</span>
+              )}
+            </div>
 
             <button
               className={styles.registerBtn}
@@ -147,7 +243,6 @@ export default function UniversityRegistration() {
             </button>
           </div>
 
-          {/* Members List */}
           {members.map((m, i) => (
             <div key={i} className={styles.memberRow}>
               <span>{m.name}</span>
@@ -165,7 +260,6 @@ export default function UniversityRegistration() {
             </div>
           ))}
 
-          {/* Payment + Upload */}
           <div className={styles.paymentRow}>
             <div className={styles.paymentInfo}>
               <h4>Payment Details</h4>
@@ -173,27 +267,24 @@ export default function UniversityRegistration() {
               <p>Account Number: 85473940</p>
               <p>Branch: University of Moratuwa</p>
               <p><strong>Fee: Rs. 10,000.00</strong></p>
+              <p><strong>Upload the payment slip as PDF</strong></p>
             </div>
 
             <div className={styles.uploadSection}>
-              <ImageUploader
-                fileList={fileList}
-                setFileList={setFileList}
-                setImage={setImage}
-                setImageName={setImageName}
-                isfile={true}
-              />
+              <MyDropzone onFileUploaded={handleImageDrop} />
             </div>
           </div>
 
-          {/* Register Button */}
+          {error && <p className={styles.errorText}>{error}</p>}
+
           <div className={styles.registerWrapper}>
-            <button align="center"className={styles.registerBtn}>Register Team</button>
+            <button className={styles.registerBtn} onClick={handleRegisterTeam}>
+              Register Team
+            </button>
           </div>
         </div>
       </main>
 
-      {/* ================= FOOTER ================= */}
       <Footer />
     </>
   );

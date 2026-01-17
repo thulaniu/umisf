@@ -4,6 +4,7 @@
   background: linear-gradient(135deg, #b8d7f0, #dbeafe);
   padding: 120px 20px 60px;
   font-family: "Inter", "Hind", sans-serif;
+  font-size: 20px;
 }
 
 /* Title */
@@ -48,6 +49,7 @@
   background: white;
   border-radius: 16px;
   padding: 28px;
+  font-size: 14px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
 }
 
@@ -67,14 +69,14 @@ label {
   display: block;
 }
 
-select,
-input {
+.formCard select,
+.formCard input {
   width: 100%;
   height: 40px;              
   padding: 0 12px;           
   border-radius: 8px;
   border: 1px solid #d1d5db;
-  font-size: 8px;
+  font-size: 14px;
   box-sizing: border-box;
 }
 
@@ -160,6 +162,7 @@ select option {
   border-radius: 8px;
   padding: 0 16px;
   font-weight: 500;
+  height: auto;
   cursor: pointer;
 }
 
@@ -178,8 +181,25 @@ select option {
   border-radius: 8px;
   margin-bottom: 8px;
   align-items: center;
-  font-size: 14px;
+  font-size: 13px;
 }
+
+
+.memberRow span {
+  font-size: 13px;
+  color: #000000;         /* softer gray */
+}
+
+.memberRow {
+  padding: 8px 10px;
+}
+
+.memberRow .edit,
+.memberRow .delete {
+  font-size: 11px;
+  padding: 5px 8px;
+}
+
 
 /* Actions */
 .actions {
@@ -269,14 +289,17 @@ select option {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  align-items: stretch; /* 🔑 makes both cards same height */
+  align-items: stretch;
   margin-top: 24px;
 }
 
+/* FIXED: remove hard width */
 .uploadSection {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .uploadSection h4 {
@@ -306,18 +329,77 @@ select option {
   align-items: center;
 }
 
+.errorText {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.guidelineLink {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.guidelineLink:hover {
+  text-decoration: underline;
+}
+
+.agreement {
+  margin-top: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.agreement input {
+  margin-top: 3px;
+}
+
+.agreement label {
+  font-size: 13px;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.fieldError {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  color: #dc2626;
+}
+
+
 
 
 /* Responsive */
 @media (max-width: 900px) {
-  .grid,
-  .memberInput,
-  .memberRow {
+  .grid {
     grid-template-columns: 1fr;
   }
 
-  .payment {
-    flex-direction: column;
-    align-items: stretch;
+  .memberInput {
+    grid-template-columns: 1fr;
+  }
+
+  .memberRow {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .actions {
+    justify-content: flex-start;
+  }
+
+  .paymentRow {
+    grid-template-columns: 1fr;
+  }
+
+  .uploadSection {
+    width: 100%;
   }
 }
