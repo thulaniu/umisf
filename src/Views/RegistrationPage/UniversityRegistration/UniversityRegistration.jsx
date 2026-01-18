@@ -115,7 +115,7 @@ export default function UniversityRegistration() {
 
         {/* ================= INFO CARD ================= */}
         <div className={styles.infoCard}>
-          <p><strong>UMISF Badminton Championship</strong></p>
+          <p><strong>UMISF Badminton Championship - University Team Registration</strong></p>
 
           <ul>
             <li>📍 MBA</li>
